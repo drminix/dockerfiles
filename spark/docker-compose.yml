@@ -1,0 +1,10 @@
+version: '3'
+services:
+  spark:
+    image: jupyter/pyspark-notebook
+    expose: #for documentation purpose
+      - "8888"
+    ports:
+      - "8889:8888"
+    volumes:
+      - ".:/home/jovyan/sparkudemy"
